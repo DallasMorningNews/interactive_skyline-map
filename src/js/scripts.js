@@ -39,8 +39,17 @@ function drawMap(data) {
           'circle-radius': {
             stops: [[5, 4], [8, 6], [11, 8]],
           },
-          'circle-color': '#329ce8',
-          'circle-opacity': 0.75,
+          'circle-color': {
+            property: 'decade',
+            type: 'categorical',
+            stops: [
+              [1960, '#08306b'],
+              [1970, '#2171b5'],
+              [1980, '#6baed6'],
+              [2010, '#9ecae1']
+            ],
+          },
+          'circle-opacity': 0.9,
           'circle-stroke-width': 1,
           'circle-stroke-color': '#FFFFFF',
         },

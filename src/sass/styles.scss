@@ -154,3 +154,31 @@ img {
 .btn-disabled {
   display: none;
 }
+
+.legend {
+  display: inline;
+  font-size: 1.4rem;
+  padding-left: 0;
+  li {
+    @include type(1.4rem, 1.8rem, .6rem);
+    padding: 0 5px 0 14px;
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    &:before {
+      content: "";
+      display: block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      position: absolute;
+      top: 2.5px;
+      left: 0;
+    }
+  }
+}
+
+#d1960s:before {background-color: #08306b;}
+#d1970s:before {background-color: #2171b5;}
+#d1980s:before {background-color: #6baed6;}
+#d2010s:before {background-color: #9ecae1;}
